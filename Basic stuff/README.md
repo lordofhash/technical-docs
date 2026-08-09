@@ -12,6 +12,9 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 Use code with caution.
 
+[!TIP]
+**Ed25519** is the modern, faster, and more secure standard for SSH keys. 
+
 * **Save Location:** Press **Enter** to accept the default hidden location (~/.ssh/id_ed25519).
 * **Passphrase:** Type a secure password and press **Enter**, then type it again to confirm. *(Highly recommended to protect your key)*.
 
@@ -25,6 +28,9 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 Use code with caution.
 
+[!CAUTION]
+Never share your private key (id_ed25519). Only share the public key ending in .pub. 
+
 ### Step 3: Add the Key to GitHub
 
 1. Log into **GitHub.com**.
@@ -32,7 +38,7 @@ Use code with caution.
 3. In the left sidebar, click **SSH and GPG keys**.
 4. Click the green **New SSH key** button.
 5. Give it a descriptive **Title** (e.g., "MacBook Air").
-6. Leave the **Key type** as "Authentication Key".
+6. Leave the **Key type** as **Authentication Key**.
 7. Paste (Cmd + V) your key into the **Key** field.
 8. Click **Add SSH key**.
 
@@ -80,8 +86,8 @@ Host github.com
 Use code with caution.
 3. Save and exit the editor: 
 
-  * Press Ctrl + O then **Enter** to save changes.
-  * Press Ctrl + X to exit.
+  * Press **Ctrl + O** then **Enter** to save changes.
+  * Press **Ctrl + X** to exit.
 
 ### Step 6: Test the Connection
 
@@ -95,4 +101,8 @@ Use code with caution.
 
 ### Expected Success Output:
 
+text
+
 Hi lordofhash! You've successfully authenticated, but GitHub does not provide shell access.
+
+Use code with caution.
